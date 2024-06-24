@@ -3,7 +3,7 @@
 # Title: remove_old_amis.sh - Remove Old AMIs After 7 Days
 
 # Global Variables
-RETENTION_PERIOD=7 # Days, change as needed
+RETENTION_PERIOD=0 # Days, change as needed
 REGION="${AWS_REGION}"
 DRY_RUN="${DRY_RUN:-true}"
 

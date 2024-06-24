@@ -5,7 +5,7 @@
 # Global Variables
 RETENTION_PERIOD=7 # Days, change as needed
 REGION="${AWS_REGION}"
-DRY_RUN="${DRY_RUN:-false}"
+DRY_RUN="${DRY_RUN:-true}"
 
 # Function to get the list of AMIs older than the retention period
 get_old_amis() {

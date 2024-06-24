@@ -62,8 +62,8 @@ pipeline {
                 script {
                     def dryRunFlag = params.DRY_RUN ? 'true' : 'false'
                     sh """
-                    chmod +x /remove_old_amis.sh
-                    DRY_RUN=${dryRunFlag} /remove_old_amis.sh
+                    chmod +x ./remove_old_amis.sh
+                    DRY_RUN=${dryRunFlag} ./remove_old_amis.sh
                     """
                 }
             }
